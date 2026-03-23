@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoveCR | Monitoreo</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+
+            <h1 class="title">Monitoreo de unidades</h1>
+            <p class="mb-4">Visualización del recorrido en tiempo real (simulado).</p>
+
+            <!-- RESUMEN -->
+            <div class="route-summary-card">
+                <div>
+                    <p class="summary-label">Inicio</p>
+                    <p class="summary-value">Ciudad Quesada</p>
+                </div>
+                <div>
+                    <p class="summary-label">Destino</p>
+                    <p class="summary-value">Pital</p>
+                </div>
+                <div>
+                    <p class="summary-label">ETA</p>
+                    <p class="summary-value">8 min</p>
+                </div>
+            </div>
+
+            <!-- MAPA -->
+            <div id="busMap"></div>
+
+        </div>
+    </section>
+
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Inicio</span>
+        </a>
+
+        <a href="rutas.html" class="mobile-nav-item">
+            <i class="fa-solid fa-route"></i>
+            <span>Rutas</span>
+        </a>
+
+        <a href="monitoreo.html" class="mobile-nav-item active">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Monitoreo</span>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
