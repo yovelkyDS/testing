@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoveCR | Detalle de ruta</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="detalle-ruta.css" />
+</head>
+
+<body>
+  <section class="hero detail-hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <a href="rutas.html" class="detail-back-link">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Volver a rutas</span>
+        </a>
+
+        <p class="detail-eyebrow">Detalle de ruta</p>
+        <h1 class="detail-hero-title">Ciudad Quesada - Pital</h1>
+        <p class="detail-hero-text">
+          Consulta visual de paradas oficiales, unidades activas y tiempo estimado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container detail-page">
+    <section class="section">
+      <div class="card detail-card">
+        <div class="card-content">
+          <div class="detail-top">
+            <div>
+              <p class="detail-mini">Información general</p>
+              <h2 class="title is-4 mb-2">Recorrido principal</h2>
+              <p class="detail-text">
+                La información se presenta de forma visual para facilitar la consulta por parte del usuario.
+              </p>
+            </div>
+
+            <button class="button is-primary is-light is-rounded detail-button">
+              <span class="icon"><i class="fa-solid fa-route"></i></span>
+              <span>Ver recorrido</span>
+            </button>
+          </div>
+
+          <div class="detail-map map-clean">
+            <div class="map-toolbar">
+              <div class="map-chip strong">Ruta CQ - Pital</div>
+              <div class="map-chip">Actualización continua</div>
+            </div>
+
+            <div class="map-grid"></div>
+            <div class="map-water"></div>
+
+            <div class="street street-1"></div>
+            <div class="street street-2"></div>
+            <div class="street street-3"></div>
+
+            <!-- Ruta principal -->
+            <div class="route-line route-main"></div>
+
+            <!-- Paradas conectadas al recorrido -->
+            <div class="stop-node stop-1">
+              <span class="stop-point"></span>
+              <span class="stop-name">Terminal Ciudad Quesada</span>
+            </div>
+
+            <div class="stop-node stop-2">
+              <span class="stop-point"></span>
+              <span class="stop-name">Cruce de Muelle</span>
+            </div>
+
+            <div class="stop-node stop-3">
+              <span class="stop-point"></span>
+              <span class="stop-name">Hospital San Carlos</span>
+            </div>
+
+            <div class="stop-node stop-4">
+              <span class="stop-point"></span>
+              <span class="stop-name">Centro de Pital</span>
+            </div>
+
+            <!-- Unidades sobre la misma ruta -->
+            <div class="bus-pill bus-1">
+              <i class="fa-solid fa-bus"></i>
+              <span>Bus 01</span>
+            </div>
+
+            <div class="bus-pill bus-2">
+              <i class="fa-solid fa-bus"></i>
+              <span>Bus 02</span>
+            </div>
+
+            <div class="clean-legend">
+              <div><span class="legend-dot stop-legend"></span> Paradas</div>
+              <div><span class="legend-dot bus-legend"></span> Unidades</div>
+              <div><span class="legend-dot route-legend"></span> Ruta</div>
+            </div>
+          </div>
+
+          <div class="columns is-mobile is-multiline mt-1">
+            <div class="column is-12-mobile is-6-tablet">
+              <div class="card detail-info-card eta-card">
+                <div class="card-content">
+                  <p class="detail-info-label">Tiempo estimado</p>
+                  <h3 class="detail-info-value">8 min</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-12-mobile is-6-tablet">
+              <div class="card detail-info-card delay-card">
+                <div class="card-content">
+                  <p class="detail-info-label">Estado del viaje</p>
+                  <h3 class="detail-info-value">Sin retraso</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card detail-card mt-5">
+            <div class="card-content">
+              <div class="detail-stops-head">
+                <h2 class="title is-5 mb-0">Paradas oficiales</h2>
+                <span class="tag is-primary is-light">4 registradas</span>
+              </div>
+
+              <div class="detail-stops-list">
+                <div class="detail-stop-item">
+                  <strong>Terminal Ciudad Quesada</strong>
+                  <p>Punto principal de salida.</p>
+                </div>
+
+                <div class="detail-stop-item">
+                  <strong>Hospital San Carlos</strong>
+                  <p>Parada oficial intermedia.</p>
+                </div>
+
+                <div class="detail-stop-item">
+                  <strong>Cruce de Muelle</strong>
+                  <p>Parada oficial intermedia.</p>
+                </div>
+
+                <div class="detail-stop-item">
+                  <strong>Centro de Pital</strong>
+                  <p>Punto de llegada.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+  </main>
+
+  <nav class="detail-mobile-nav">
+    <a href="index.html" class="detail-mobile-item">
+      <i class="fa-solid fa-house"></i>
+      <span>Inicio</span>
+    </a>
+    <a href="rutas.html" class="detail-mobile-item">
+      <i class="fa-solid fa-route"></i>
+      <span>Rutas</span>
+    </a>
+    <a href="monitoreo.html" class="detail-mobile-item">
+      <i class="fa-solid fa-chart-line"></i>
+      <span>Monitoreo</span>
+    </a>
+  </nav>
+</body>
+
+</html>
